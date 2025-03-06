@@ -9,9 +9,15 @@ print_r($data);
     $char_lvl = $data["char_lvl"];
 
   // 2. Databaseverbinding
-  $servername = "forumpjedb.mysql.database.azure.com";
-  $username = "felixadmin";
-  $password = "uiop7890UIOP&*()";
+
+  // $servername = "forumpjedb.mysql.database.azure.com";
+  // $username = "felixadmin";
+  // $password = "uiop7890UIOP&*()";
+  // $dbname = "character_gen_runa";
+
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
   $dbname = "character_gen_runa";
 
   $conn = new mysqli($servername, $username, $password, $dbname);
