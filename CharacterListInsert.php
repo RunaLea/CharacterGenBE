@@ -29,8 +29,8 @@ print_r($data);
 
   // 3. SQL-query voor toevoegen van data
   // Let op de kolomnamen in je table
-  $sql = "INSERT INTO characters (char_name, char_lvl)
-          VALUES ('$char_name', '$char_lvl')";
+  $sql = "INSERT INTO characters (char_name, char_lvl, race_id)
+          VALUES ('$char_name', '$char_lvl', $race_id)";
 echo $sql;
   // 4. Voer de query uit en check of het gelukt is
   if ($conn->query($sql) === TRUE) {
